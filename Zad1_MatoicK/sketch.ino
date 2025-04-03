@@ -67,6 +67,10 @@ void setup() {
     pinMode(lightSensor, INPUT);
     pinMode(potentiometer, INPUT);
     Serial.begin(9600);
+    delay(100);
+    while (Serial.available()) {
+        Serial.read();
+    }
 
     attachInterrupt(digitalPinToInterrupt(button), isr_button, FALLING);
     attachInterrupt(digitalPinToInterrupt(button2), isr_button2, FALLING);
