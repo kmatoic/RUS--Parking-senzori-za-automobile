@@ -4,10 +4,11 @@
 
 1. [Opis sustava](#opis-sustava)
 2. [Hardverske komponente](#hardverske-komponente)
-3. [Rukovanje prekidima](#rukovanje-prekidima)
-4. [Funkcionalni zahtjevi](#funkcionalni-zahtjevi)
-5. [Logički analizator](#logicki-analizator)
-6. [Testiranje](#testiranje)
+3. [Shema](#shema)
+4. [Rukovanje prekidima](#rukovanje-prekidima)
+5. [Funkcionalni zahtjevi](#funkcionalni-zahtjevi)
+6. [Logički analizator](#logicki-analizator)
+7. [Testiranje](#testiranje)
 
 ## <a name="opis-sustava"></a>1. Opis sustava
 
@@ -35,7 +36,11 @@ Svaki prekid se obrađuje zasebno. Kada dođe prekid višeg prioriteta, on se ob
 | Potenciometar        | 1        | A1                  |
 | Logički analizator   | 1        | -                   |
 
-## <a name="rukovanje-prekidima"></a>3. Rukovanje prekidima
+## <a name="shema"></a>3. Shema
+
+![Shema](Shema.png)
+
+## <a name="rukovanje-prekidima"></a>4. Rukovanje prekidima
 
 Sustav obrađuje prekide uzrokovane različitim senzorima i korisničkim ulazima. Prioriteti prekida su sljedeći:
  
@@ -78,6 +83,10 @@ Logički analizator je uređaj koji se koristi za snimanje i analizu digitalnih 
 | Plava LED dioda      | D6       |
 | Plavo tipkalo        | D7       |
 | GND                  | GND      |
+
+Na sljedećoj slici su vidljivi digitalni signali snimljeni pomoću logičkog analizatora.
+
+![Logički analizator](Logički analizator.png)
 
 ## <a name="testiranje"></a>6. Testiranje
 
