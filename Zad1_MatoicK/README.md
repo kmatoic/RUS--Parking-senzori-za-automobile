@@ -68,7 +68,7 @@ Sustav obrađuje prekide uzrokovane različitim senzorima i korisničkim ulazima
 | FR-12  | Implementacija mora koristiti millis() umjesto delay() gdje je moguće. |
 | FR-13  | Implementacija logičkog analizatora za vizualizaciju promjene signala i provjeru ispravnosti izvršavanja prioriteta. |
 
-## <a name="testiranje"></a>5. Logički analizator
+## <a name="logicki-analizator"></a>5. Logički analizator
 
 Logički analizator je uređaj koji se koristi za snimanje i analizu digitalnih signala u elektroničkim krugovima. Omogućuje korisnicima da vizualiziraju promjene u signalima na više kanala, čime se olakšava dijagnostika i testiranje kompleksnih sustava. Analizator radi tako da prati promjene u binarnim signalima (0 ili 1) i prikazuje ih u vremenskom razmaku, omogućujući analizu vremena trajanja i odnosa između različitih signala. Logički analizator je implementiran u ovom sustavu kako bi se potvrdilo ispravno izvršavanje prioriteta i pravovremena reakcija na događaje. Način spajanja logičkog analizatora u ovom projektu:
 
@@ -86,7 +86,7 @@ Logički analizator je uređaj koji se koristi za snimanje i analizu digitalnih 
 
 Na sljedećoj slici su vidljivi digitalni signali snimljeni pomoću logičkog analizatora.
 
-![Logički analizator](Logički analizator.png)
+![Logički analizator](Logicki_analizator.png)
 
 ## <a name="testiranje"></a>6. Testiranje
 
