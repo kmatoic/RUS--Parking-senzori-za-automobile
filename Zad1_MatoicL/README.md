@@ -4,10 +4,11 @@
 
 1. [Opis zadatka](#opis-projekta)
 2. [Hardverske komponente](#hardverske-komponente)
-3. [Način rada sustava](#nacin-rada-sustava)
-4. [Funkcionalni zahtjevi](#funkcionalni-zahtjevi)
-5. [Logički analizator](#logicki-analizator)
-6. [Testiranje](#testiranje)
+3. [Shema](#shema)
+4. [Način rada sustava](#nacin-rada-sustava)
+5. [Funkcionalni zahtjevi](#funkcionalni-zahtjevi)
+6. [Logički analizator](#logicki-analizator)
+7. [Testiranje](#testiranje)
 
 ## <a name="opis-projekta"></a>1. Opis zadatka
 
@@ -46,7 +47,11 @@ U izradi ovog zadatka koristile su se sljedeće komponente:
 | Otpornik 1kΩ      | 5        | -                   |
 | Logički analizator| 1        | -                   |
 
-## <a name="nacin-rada-sustava"></a>3. Način rada sustava
+## <a name="shema"></a>3. Shema
+
+![Shema](Shema.png)
+
+## <a name="nacin-rada-sustava"></a>4. Način rada sustava
 
 Sustav koristi mehanizam prekida za efikasno upravljanje događajima koji se odvijaju u stvarnom vremenu. Prekidi osiguravaju brzu reakciju na vanjske i unutarnje događaje bez potrebe za stalnim provjeravanje statusa tipkala ili senzora.
 
@@ -94,6 +99,10 @@ U nastavku se nalazi tablica sa popisom komponenti koje su spojene na odgovaraju
 | LED (narančasta)  | D5       |
 | LED (ljubičasta)  | D6       |
 | GND               | GND      |
+
+Na slici ispod su vidljivi digitalni signali snimljeni pomoću logičkog analizatora.
+
+![Logički-analizator](Logički-analizator.png)
 
 ## <a name="testiranje"></a>6. Testiranje
 
