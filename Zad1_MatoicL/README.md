@@ -102,7 +102,7 @@ U nastavku se nalazi tablica sa popisom komponenti koje su spojene na odgovaraju
 
 Na slici ispod su vidljivi digitalni signali snimljeni pomoću logičkog analizatora.
 
-![Logički-analizator](Logički-analizator.png)
+![Logicki-analizator](Analizator.png)
 
 ## <a name="testiranje"></a>6. Testiranje
 
