@@ -6,7 +6,8 @@
 2. [Hardverske komponente](#hardverske-komponente)
 3. [Način rada sustava](#nacin-rada-sustava)
 4. [Funkcionalni zahtjevi](#funkcionalni-zahtjevi)
-4. [Testiranje](#testiranje)
+5. [Logički analizator](#logicki-analizator)
+6. [Testiranje](#testiranje)
 
 ## <a name="opis-projekta"></a>1. Opis zadatka
 
@@ -19,6 +20,7 @@ U izradi ovog zadatka koristile su se sljedeće komponente:
 - HC-SR04 senzor udaljenosti
 - Timer koji generira periodične prekide
 - Arduino Uno mikrokontroler
+- Logički analizator
 
 **Funkcionalnosti**:
 
@@ -42,6 +44,7 @@ U izradi ovog zadatka koristile su se sljedeće komponente:
 | LED (ljubičasta)  | 1        | 4                   |
 | HC-SR04 senzor    | 1        | TRIG: 7, ECHO: 6    |
 | Otpornik 1kΩ      | 5        | -                   |
+| Logički analizator| 1        | -                   |
 
 ## <a name="nacin-rada-sustava"></a>3. Način rada sustava
 
@@ -73,7 +76,25 @@ Tablica u nastavku prikazuje pregled funkcionalnosti koje su napravljene u zadat
 | FR-9  | Istovremeno može biti aktivna samo jedna LED dioda |
 | FR-10 | Ako se istovremeno aktivira više prekida, obrađuje se onaj s najvećim prioritetom |
 | FR-11 | Implementacija koristi `millis()` umjesto `delay()` kako bi se osigurala veća efikasnost sustava|
+| FR-12 | Korištenje logičkog analizatora za provjeru izvršavanja prioriteta i reakcija na događaje|
 
-## <a name="testiranje"></a>5. Testiranje
+## <a name="logicki-analizator"></a>5. Logički analizator
+
+Logički analizator je uređaja koji omogućava praćenje i ispitivanje digitalnih signala u elektroničkm sustavima. Korisinicima pruža mogućnost vizualiazcije promjena na više kanala čime je olakšana identifikacija problema i testiranje složenih sustava. Uređaj funkcionira praćenjem varijacija binarnih signala (0 ili 1) te ih prikazuje u vremenskom intervalu, omogućujući analizu trajanja signala i njihovih međusobnih odnosa. Logički analizator je integriran u ovaj sustav kako bi se osigurala pravilna provedba prioriteta i pravovremena reakcija na dogđaje.
+
+U nastavku se nalazi tablica sa popisom komponenti koje su spojene na odgovarajuće pinove logičkog analizatora.
+
+| Komponenta        | Pin      |
+| ----------------- | -------- |
+| LED (crvena)      | D0       |
+| Crveno tipkalo    | D1       |
+| LED (plava)       | D2       |
+| Plavo tipkalo     | D3       |
+| LED (zelena)      | D4       |
+| LED (narančasta)  | D5       |
+| LED (ljubičasta)  | D6       |
+| GND               | GND      |
+
+## <a name="testiranje"></a>6. Testiranje
 
 Testiranje sustava provedeno je simulacijom različitih vrsta prekida i praćenjem reakcija mikrokontrolera. Pritiskom na tipkala provjerena je ispravna aktivacija crvene i plave LED diode, pri čemu je prekid BUTTON1 ima viši prioritet. Senzor udaljenosti uspješno je detektira objekte bliže od 50 cm, aktivira zelenu LED diodu i ispisuje odgovarajuću poruku u serijskom monitoru. Prijenos podataka putem serijske komunikacije ispravno generira prekid i uključi narančastu LED diodu. Timer je svaku sekundu aktivira ljubičastu LED diodu. Testiranjem je utvrđeno da sustav poštuje prioritet prekida i ispravno obrađuje događaje prema definiranom redoslijedu.
