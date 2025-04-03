@@ -64,7 +64,7 @@ Sustav koristi mehanizam prekida za efikasno upravljanje događajima koji se odv
 
 Kada se istovremeno aktivira više prekida, prvo se obrađuje onaj s najvišim prioritetom, a zatim se redom prelazi na prekide višeg prioriteta. Ovim pristupom osigurava se da najkritičniji događaji budu obrađeni što je prije moguće.
 
-## <a name="funkcionalni-zahtjevi"></a>4. Funkcionalni zahtjevi
+## <a name="funkcionalni-zahtjevi"></a>5. Funkcionalni zahtjevi
 
 Tablica u nastavku prikazuje pregled funkcionalnosti koje su napravljene u zadatku:
 
@@ -83,7 +83,7 @@ Tablica u nastavku prikazuje pregled funkcionalnosti koje su napravljene u zadat
 | FR-11 | Implementacija koristi `millis()` umjesto `delay()` kako bi se osigurala veća efikasnost sustava|
 | FR-12 | Korištenje logičkog analizatora za provjeru izvršavanja prioriteta i reakcija na događaje|
 
-## <a name="logicki-analizator"></a>5. Logički analizator
+## <a name="logicki-analizator"></a>6. Logički analizator
 
 Logički analizator je uređaja koji omogućava praćenje i ispitivanje digitalnih signala u elektroničkm sustavima. Korisinicima pruža mogućnost vizualiazcije promjena na više kanala čime je olakšana identifikacija problema i testiranje složenih sustava. Uređaj funkcionira praćenjem varijacija binarnih signala (0 ili 1) te ih prikazuje u vremenskom intervalu, omogućujući analizu trajanja signala i njihovih međusobnih odnosa. Logički analizator je integriran u ovaj sustav kako bi se osigurala pravilna provedba prioriteta i pravovremena reakcija na dogđaje.
 
@@ -104,6 +104,6 @@ Na slici ispod su vidljivi digitalni signali snimljeni pomoću logičkog analiza
 
 ![Logicki-analizator](Analizator.png)
 
-## <a name="testiranje"></a>6. Testiranje
+## <a name="testiranje"></a>7. Testiranje
 
 Testiranje sustava provedeno je simulacijom različitih vrsta prekida i praćenjem reakcija mikrokontrolera. Pritiskom na tipkala provjerena je ispravna aktivacija crvene i plave LED diode, pri čemu je prekid BUTTON1 ima viši prioritet. Senzor udaljenosti uspješno je detektira objekte bliže od 50 cm, aktivira zelenu LED diodu i ispisuje odgovarajuću poruku u serijskom monitoru. Prijenos podataka putem serijske komunikacije ispravno generira prekid i uključi narančastu LED diodu. Timer je svaku sekundu aktivira ljubičastu LED diodu. Testiranjem je utvrđeno da sustav poštuje prioritet prekida i ispravno obrađuje događaje prema definiranom redoslijedu.
