@@ -74,7 +74,7 @@ Sljedeća tablica prikazuje usporedbu modova po potrošnji energije, vremenu bu�
 | Power-down    | <1 µA               | 4–6 ms           | Ograničena (samo vanjski izvori)    |
 | Standby       | ~10 µA              | ~1 ms            | Srednja (oscilator ostaje aktivan)  |
 
-Zaključno, odabir odgovarajućeg sleep moda ovisi o specifičnim zahtjevima projekta. Ako je najvažnija niska potrošnja i rijetka aktivacija sustava, Power-down mod je najbolji izbor. Za sustave koji zahtijevaju brzo reagiranje uz uštedu energije, Standby predstavlja optimalno rješenje. Idle se koristi u slučajevima gdje je potrebno održavati funkcionalnost perifernih modula uz minimalno opterećenje CPU-a.
+Zaključno, odabir odgovarajućeg sleep moda ovisi o specifičnim zahtjevima projekta. Ako je najvažnije održavati funkcionalnost perifernih modula uz minimalno opterećenje CPU-a, Idle mod je najbolji izbor. Power-down se koristi u slučajevima gdje je potrebna niska potrošnja i rijetka aktivacija sustava. Za sustave koji zahtijevaju brzo reagiranje uz uštedu energije, Standby predstavlja optimalno rješenje.
 
 U ovom projektu korišten je Power-down mod, jer pruža najveću uštedu energije. S obzirom na to da se sustav budi samo u slučaju eksternog prekida (pritisak tipkala) ili putem watchdog timera, nije bilo potrebe za aktivnim perifernim uređajima tijekom mirovanja. Zbog toga je ovaj način rada idealan za minimiziranje potrošnje, čime se omogućuje energetski učinkovito ponašanje mikrokontrolera.
 
