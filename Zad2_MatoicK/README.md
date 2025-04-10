@@ -6,7 +6,7 @@
 3. [Shema](#shema)
 4. [Opis funkcionalnosti](#opis-funkcionalnosti)
 5. [Funkcionalni zahtjevi](#funkcionalni-zahtjevi)
-6. [Usporedba Sleep modova](#usporedba-sleep-modova)
+6. [Usporedba sleep modova](#usporedba-sleep-modova)
 7. [Testiranje](#testiranje)
 
 ## <a name="opis-sustava"></a>1. Opis sustava
