@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "RUS_Lab1_prekid", "index.html", [
+  [ "RUS--Parking-senzori-za-automobile", "index.html", [
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "Globals", "globals.html", [
