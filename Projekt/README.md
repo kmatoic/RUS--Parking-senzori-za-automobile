@@ -5,7 +5,7 @@ Parking senzori za automobile su ugradbeni sustav razvijen na Arduino platformi,
 Sustav koristi tri ultrazvučna senzora za mjerenje udaljenosti, LCD zaslon za prikaz podataka, LED diode za signalizaciju opasnosti, buzzer za zvučna upozorenja te servo motor za mehaničko upravljanje. Također omogućava prelazak u sleep mode za uštedu energije putem slidera. Slider služi za simulaciju prebacivanja ručice mjenjača u poziciju R.
 
 ## Slika spoja
-*(Shema sustava iz datoteke "Shema.png" priložena uz projekt)*
+![Shema](./Shema.png)
 
 ## Cilj projekta
 Cilj projekta je razviti pouzdan i energetski učinkovit senzorski sustav sposoban za:
