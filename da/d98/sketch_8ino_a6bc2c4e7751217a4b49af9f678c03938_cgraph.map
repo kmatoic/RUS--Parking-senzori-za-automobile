@@ -1,0 +1,7 @@
+<map id="shutdownComponents" name="shutdownComponents">
+<area shape="rect" id="Node000001" title="Isključuje sve komponente prije ulaska u sleep mode." alt="" coords="5,31,172,56"/>
+<area shape="rect" id="Node000002" href="$da/d98/sketch_8ino.html#ac21d052bacaf620de472c9d000f0be38" title="&lt; Biblioteka za upravljanje prekidima" alt="" coords="248,5,289,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,29,234,20,235,25,173,34"/>
+<area shape="rect" id="Node000003" href="$da/d98/sketch_8ino.html#a3ad47fa7151cbc9ab7a27d5d237b437c" title="Ažurira stanje LED indikatora na temelju udaljenosti." alt="" coords="220,55,317,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,52,207,56,206,62,172,57"/>
+</map>

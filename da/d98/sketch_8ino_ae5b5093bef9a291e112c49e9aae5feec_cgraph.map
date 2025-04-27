@@ -1,0 +1,9 @@
+<map id="enterSleep" name="enterSleep">
+<area shape="rect" id="Node000001" title="Ulazi u sleep mode (PWR_DOWN)" alt="" coords="5,31,97,56"/>
+<area shape="rect" id="Node000002" href="$da/d98/sketch_8ino.html#a6bc2c4e7751217a4b49af9f678c03938" title="Isključuje sve komponente prije ulaska u sleep mode." alt="" coords="145,31,312,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,41,132,41,132,46,98,46"/>
+<area shape="rect" id="Node000003" href="$da/d98/sketch_8ino.html#ac21d052bacaf620de472c9d000f0be38" title="&lt; Biblioteka za upravljanje prekidima" alt="" coords="388,5,429,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="312,29,374,20,375,25,313,34"/>
+<area shape="rect" id="Node000004" href="$da/d98/sketch_8ino.html#a3ad47fa7151cbc9ab7a27d5d237b437c" title="Ažurira stanje LED indikatora na temelju udaljenosti." alt="" coords="360,55,457,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="313,52,347,56,346,62,312,57"/>
+</map>

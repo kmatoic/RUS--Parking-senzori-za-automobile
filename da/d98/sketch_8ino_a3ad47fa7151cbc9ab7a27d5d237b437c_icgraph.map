@@ -1,0 +1,10 @@
+<map id="updateLeds" name="updateLeds">
+<area shape="rect" id="Node000001" title="Ažurira stanje LED indikatora na temelju udaljenosti." alt="" coords="459,5,556,31"/>
+<area shape="rect" id="Node000002" href="$da/d98/sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="Glavna programska petlja." alt="" coords="5,5,56,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="445,21,56,21,56,15,445,15"/>
+<area shape="rect" id="Node000003" href="$da/d98/sketch_8ino.html#a6bc2c4e7751217a4b49af9f678c03938" title="Isključuje sve komponente prije ulaska u sleep mode." alt="" coords="244,31,411,56"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="445,29,411,34,411,29,445,24"/>
+<area shape="rect" id="Node000004" href="$da/d98/sketch_8ino.html#ae5b5093bef9a291e112c49e9aae5feec" title="Ulazi u sleep mode (PWR_DOWN)" alt="" coords="104,31,196,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="230,46,196,46,196,41,230,41"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="90,33,56,26,57,21,91,28"/>
+</map>

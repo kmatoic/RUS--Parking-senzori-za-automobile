@@ -1,0 +1,15 @@
+<map id="loop" name="loop">
+<area shape="rect" id="Node000001" title="Glavna programska petlja." alt="" coords="5,68,56,94"/>
+<area shape="rect" id="Node000002" href="$da/d98/sketch_8ino.html#ae5b5093bef9a291e112c49e9aae5feec" title="Ulazi u sleep mode (PWR_DOWN)" alt="" coords="126,43,218,68"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="56,74,112,64,113,69,57,79"/>
+<area shape="rect" id="Node000004" href="$da/d98/sketch_8ino.html#ac21d052bacaf620de472c9d000f0be38" title="&lt; Biblioteka za upravljanje prekidima" alt="" coords="531,19,572,44"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="44,66,70,46,103,29,161,15,220,7,280,3,338,3,442,11,517,22,516,28,441,17,337,9,280,8,221,12,162,20,105,34,73,50,47,70"/>
+<area shape="rect" id="Node000005" href="$da/d98/sketch_8ino.html#a3ad47fa7151cbc9ab7a27d5d237b437c" title="Ažurira stanje LED indikatora na temelju udaljenosti." alt="" coords="503,68,600,94"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="56,78,489,78,489,84,56,84"/>
+<area shape="rect" id="Node000006" href="$da/d98/sketch_8ino.html#ac5ef308abab5e6b137c9920277b55ec1" title="Mjeri udaljenost pomoću HC&#45;SR04 ultrazvučnog senzora." alt="" coords="104,144,240,170"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="53,92,105,123,131,136,129,141,103,127,50,96"/>
+<area shape="rect" id="Node000003" href="$da/d98/sketch_8ino.html#a6bc2c4e7751217a4b49af9f678c03938" title="Isključuje sve komponente prije ulaska u sleep mode." alt="" coords="288,43,455,68"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="218,53,274,53,274,58,218,58"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="455,42,517,33,517,39,455,47"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="455,65,489,70,489,75,455,70"/>
+</map>
