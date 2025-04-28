@@ -1,0 +1,19 @@
+@startuml ParkingSenzori_VisokaRazina
+left to right direction
+actor Vozač as V
+actor Serviser as S
+
+rectangle "Sustav parking senzora" {
+  usecase "Detektiraj prepreke" as UC1
+  usecase "Vizualna indikacija udaljenosti" as UC2
+  usecase "Zvučno upozorenje" as UC3
+  usecase "Uđi u stanje mirovanja" as UC4
+  usecase "Održavanje sustava" as UC5
+}
+
+V --> UC1
+V --> UC2
+V --> UC3
+V --> UC4
+S --> UC5
+@enduml

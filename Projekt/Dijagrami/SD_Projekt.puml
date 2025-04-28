@@ -1,0 +1,75 @@
+@startuml Sekvencijski dijagram
+title Sekvencijski dijagram: Parking senzori za automobile
+participant Vozač as V
+participant Mikrokontroler as MK
+participant Senzori as S
+participant LED as L
+participant LCD as D
+participant Buzzer as B
+participant ServoMotor as SM
+participant Slider as SL
+
+== Inicijalizacija ==
+V -> MK: Uključi sustav
+activate MK
+MK -> S: Kalibracija senzora
+MK -> D: Inicijalizacija LCD-a
+MK -> SM: Kalibracija servo motora
+MK --> V: Sustav spreman
+
+== Glavna petlja ==
+loop Kontinuirano mjerenje
+    V -> MK: Pokreni ciklus mjerenja
+    activate MK
+    
+    == Mjerenje udaljenosti ==
+    MK -> S: Trigger za sve senzore
+    activate S
+    S --> MK: Echo vrijednosti (L,S,D)
+    deactivate S
+    
+    MK -> MK: Izračun min. udaljenosti
+    
+    == Indikacija ==
+    alt Normalno stanje (=>50 cm)
+        MK -> B: Tišina
+        MK -> SM: Normalan rad
+    else Prvo upozorenje (30-50 cm)
+        MK -> L: Žute LED aktivne
+        MK -> B: Isprekidani ton
+        MK -> SM: Normalan rad
+    else Drugo upozorenje (10-30 cm)
+        MK -> L: Narančaste LED + žute
+        MK -> B: Isprekidani ton
+        MK -> SM: Normalan rad
+    else Kritično (<=10 cm)
+        MK -> L: Crvene LED + ostale
+        MK -> B: Kontinuirani visoki ton
+        MK -> SM: Zaustavi motor
+        MK -> D: Ispisuje poruku "STOP!!"
+    end
+    
+    MK -> D: Ažuriraj prikaz (L:%d S:%d D:%d cm)
+    
+    == Sleep mode kontrola ==
+    V -> SL: Pritisak tipke
+    SL -> MK: Prekid
+    MK -> MK: WakeUp rutina
+    MK -> MK: Sleep flag = true
+    
+    alt Aktiviran sleep mode
+        MK -> S: Deaktiviraj senzore
+        MK -> D: Isključi backlight
+        MK -> B: Isključi buzzer
+        MK -> SM: Detach servo
+        MK --> V: Sustav ušao u sleep
+    else Deaktiviran sleep mode
+        MK -> S: Reaktiviraj senzore
+        MK -> D: Uključi backlight
+        MK --> V: Sustav aktivan
+    end
+    
+    deactivate MK
+end
+
+@enduml

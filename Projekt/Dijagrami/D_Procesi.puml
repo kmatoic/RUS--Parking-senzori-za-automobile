@@ -1,0 +1,18 @@
+@startuml ParkingSenzori_Procesi
+left to right direction
+actor Vozač as V
+
+rectangle "Proces pomoći pri parkiranju" {
+  usecase "Kontinuirano nadziranje okoline" as UC1
+  usecase "Obrada podataka sa senzora" as UC2
+  usecase "Odredi razinu upozorenja" as UC3
+  usecase "Aktiviraj odgovarajuća upozorenja" as UC4
+  usecase "Pruži povratnu informaciju o udaljenosti" as UC5
+}
+
+V --> UC1
+UC1 --> UC2
+UC2 --> UC3
+UC3 --> UC4
+UC3 --> UC5
+@enduml

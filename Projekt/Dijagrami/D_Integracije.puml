@@ -1,0 +1,29 @@
+@startuml ParkingSenzori_Integracije
+left to right direction
+actor Sustav as S
+
+rectangle "Hardverske komponente" {
+  usecase "Ultrazvučni senzori" as UC1
+  usecase "Servo motor" as UC2
+  usecase "LED indikatori" as UC3
+  usecase "Zujalica" as UC4
+  usecase "LCD zaslon" as UC5
+}
+
+rectangle "Integracije sustava" {
+  usecase "I2C komunikacija (LCD)" as UC6
+  usecase "PWM kontrola (Servo)" as UC7
+  usecase "Upravljanje prekidima" as UC8
+  usecase "Upravljanje stanjem mirovanja" as UC9
+}
+
+S --> UC1
+S --> UC2
+S --> UC3
+S --> UC4
+S --> UC5
+S --> UC6
+S --> UC7
+S --> UC8
+S --> UC9
+@enduml

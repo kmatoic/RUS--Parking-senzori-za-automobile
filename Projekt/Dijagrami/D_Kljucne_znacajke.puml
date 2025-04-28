@@ -1,0 +1,34 @@
+@startuml ParkingSenzori_KljucneZnacajke
+left to right direction
+actor Vozač as V
+
+rectangle "Nadzor udaljenosti" {
+  usecase "Mjeri udaljenost (3 senzora)" as UC1
+  usecase "Izračunaj minimalnu udaljenost" as UC2
+  usecase "Ažuriraj LED indikatore" as UC3
+}
+
+rectangle "Sustav upozorenja" {
+  usecase "Aktiviraj zujalicu" as UC4
+  usecase "Prikaži udaljenost na LCD-u" as UC5
+  usecase "Zaustavi servo na kritičnoj udaljenosti" as UC6
+}
+
+rectangle "Upravljanje energijom" {
+  usecase "Uđi u stanje mirovanja" as UC7
+  usecase "Probudi iz stanja mirovanja" as UC8
+}
+
+V --> UC1
+V --> UC3
+V --> UC4
+V --> UC5
+V --> UC7
+V --> UC8
+
+UC1 --> UC2
+UC2 --> UC3
+UC2 --> UC4
+UC2 --> UC5
+UC2 --> UC6
+@enduml

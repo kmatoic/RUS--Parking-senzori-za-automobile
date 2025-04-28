@@ -1,0 +1,24 @@
+@startuml ParkingSenzori_KorisnickeUloge
+left to right direction
+actor Vozač as V
+actor Serviser as S
+
+rectangle "Funkcije za vozača" {
+  usecase "Pregled informacija o udaljenosti" as UC1
+  usecase "Primanje zvučnih/vizualnih upozorenja" as UC2
+  usecase "Uključi/isključi stanje mirovanja" as UC3
+}
+
+rectangle "Funkcije za održavanje" {
+  usecase "Kalibriraj senzore" as UC4
+  usecase "Testiraj komponente" as UC5
+  usecase "Ažuriraj firmware" as UC6
+}
+
+V --> UC1
+V --> UC2
+V --> UC3
+S --> UC4
+S --> UC5
+S --> UC6
+@enduml
